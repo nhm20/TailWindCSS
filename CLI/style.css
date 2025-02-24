@@ -1,6 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-500 rounded p-2 text-white hover:bg-blue-900;
+  }
+}
+
+.bg-background-blue {
+  @apply bg-blue-500 m-2 p-2;
+}
+
+.custom-container {
+  @apply bg-green-500;
+  height: theme("spacing.100");
+}
+@media screen (lg) {
+  body {
+    @apply bg-red-500;
+  }
+}

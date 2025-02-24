@@ -15,7 +15,24 @@
   </body>
 </html>
 <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule -->
+ In Tailwind CSS, the @ rule is used for various functionalities like custom directives, managing utilities, and defining conditional styles. Some common uses of the @ rule in Tailwind include:
+ @import: "To use a custom font in your project, you can add an @import rule to bring in the font stylesheet from Google Fonts."
+
+@apply: "Instead of repeatedly applying utility classes like px-4 py-2 bg-blue-500, you can create a custom class using the @apply directive to keep your CSS more maintainable."
+
+@layer: "If you want to extend Tailwind's utility classes with your own custom styles, you can define them in a new @layer utilities block."
+
+@variants: "To create a custom variant for hover states, you can use the @variants directive to apply different styles when the element is hovered."
+
+@screen: "In Tailwind, the @screen directive allows you to apply responsive styles for different screen sizes, ensuring your design adapts to various devices."
+
+Each example showcases how the @ rule is utilized to make styling more flexible and organized in Tailwind.
+
+
+
  <!-- https://tailwindcss.com/docs/functions-and-directives -->
+  Directives in Tailwind are special commands that allow you to configure, extend, or customize the framework. They include:
+  Functions in Tailwind CSS are used to generate values dynamically for properties, often allowing for calculations and customizations. They include:
 <!-- @tailwind base removes default css props of html elements -->
 
 <!-- style.css -->

@@ -3,16 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dark Mode</title>
     <link rel="stylesheet" href="../output.css" />
+    <script>
+      // Automatically apply dark mode based on the user's system preference
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
   </head>
-  <body>
-    <div class="dark:bg-slate-800">
+  <body class="dark:bg-slate-800">
+    <button
+      class="bg-green-500 rounded-2xl hover:bg-green-600 p-4 m-4"
+      onclick="document.documentElement.classList.toggle('dark')"
+    >
+      Toggle Dark Mode
+    </button>
+
+    <div>
       <h1 class="text-7xl dark:text-white">Dark Mode</h1>
-      <p class="text-4xl dark:text-white">COde ing</p>
+      <p class="text-4xl dark:text-white">Code ing</p>
     </div>
-    <div class="flex border-slate-600 size-52 m-20 p-3 dark:bg-slate-600 dark: border-red-500 ">
-      <div class="bg-blue-400 size-21 dark:bg-black">
+    <div
+      class="flex border-slate-600 w-52 m-20 p-3 dark:bg-slate-600 dark:border-red-500"
+    >
+      <div class="bg-blue-400 w-21 dark:bg-black">
         <h1>Dark Mode</h1>
         <p class="text-2xl ml-10 p-2 text-white">Box with Dark Mode</p>
       </div>

@@ -11,10 +11,9 @@
       <button class="bg-blue-500 rounded p-2 text-white hover:bg-900">
         Button
       </button>
-      <button class="btn-primary">
-        Button
-      </button>
-      <h1 class="bg-background blue">Hell0</h1>
+      <button class="btn-primary">Button</button>
+      <h1 class="bg-background-blue">Hell0</h1>
+      <h1 class="hover:bg-background-blue">Hell0</h1>
     </div>
   </body>
 </html>
@@ -22,11 +21,11 @@
 <!-- style.css -->
 <!-- @layer components {
   .btn-primary {
-    @apply bg-blue-500 rounded p-2 text-white hover:bg-900;
+    @apply bg-blue-500 rounded p-2 text-white hover:bg-blue-900;
   }
 } -->
 
-<!-- features like hover do not working with these types -->
-<!-- .bg-background blue{
+<!-- features like hover do not working with these types without component directive-->
+<!-- .bg-background-blue{
      @apply bg-blue-500 m-2 p-2;
 } -->
